@@ -8,11 +8,12 @@ class CurrentlyReading extends Component {
     title: "",
     image: "",
     isbn: 0,
+    link: "",
   }
 
   componentDidMount() {
     const goodReadsKey = "55fwR0TWKwR7Q9ypEH3Xw"
-    // const googleKey = "AIzaSyDWUdACh9Aq_mCkbCoDxQalF4DAlXkGjPc"
+
     axios({
       url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=currently-reading`,
     }).then(res => {
@@ -27,35 +28,43 @@ class CurrentlyReading extends Component {
       const title = book.title._text
       const image = book.image_url._text
       const isbn = book.isbn._text
-      console.log(isbn)
+      const link = book.link._text
+      // console.log(isbn)
       this.setState({
         author: author,
         title: title,
         image: image,
         isbn: isbn,
+        link: link,
       })
+
+      if (image === "") this.updateCover(isbn)
     })
-    //   .then(getBookCover(this.state.isbn))
-    // const getBookCover = function(isbn) {
-    //   axios({
-    //     url: `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}&key=${googleKey}`,
-    //   }).then(res => {
-    //     // const bookCoverData = convertToJson.xml2json(res.data, {
-    //     //   compact: true,
-    //     //   spaces: 4,
-    //     // })
-    //     // const bookCoverDataJson = JSON.parse(bookCoverData)
-    //     console.log(`getBookCover: `, res)
-    //   })
-    // }
   }
+
+  updateCover(isbn) {
+    axios({
+      url: `https://www.googleapis.com/books/v1/volumes?q=isbn:038553504X&key=AIzaSyDWUdACh9Aq_mCkbCoDxQalF4DAlXkGjPc`,
+    }).then(res => {
+      if (res.data.items[0].volumeInfo.imageLinks.thumbnail) {
+        this.setState({
+          image: res.data.items[0].volumeInfo.imageLinks.thumbnail,
+          imageFromGoogle: true,
+        })
+      }
+    })
+  }
+
   render() {
     return (
       <div>
-        <img
-          src={this.state.image}
-          alt={`${this.state.title} by ${this.state.author}`}
-        />
+        <a href={this.state.link} target="_blank" rel="noopener noreferrer">
+          <img
+            style={{ width: "100px", height: "auto" }}
+            src={this.state.image}
+            alt={`${this.state.title} by ${this.state.author}`}
+          />
+        </a>
         <p>
           {this.state.title} by {this.state.author}
         </p>
