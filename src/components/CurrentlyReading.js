@@ -58,6 +58,7 @@ class CurrentlyReading extends Component {
   render() {
     return (
       <div>
+        <h2>Currently Reading</h2>
         <a href={this.state.link} target="_blank" rel="noopener noreferrer">
           <img
             style={{ width: "100px", height: "auto" }}
