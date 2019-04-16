@@ -2,7 +2,9 @@ import React, { Component } from "react"
 import axios from "axios"
 import convertToJson from "xml-js"
 
-class CurrentlyReading extends Component {
+import BookList from "./BookList"
+
+class Books extends Component {
   state = {
     author: "",
     title: "",
@@ -41,7 +43,7 @@ class CurrentlyReading extends Component {
     })
 
     axios({
-      url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=4`,
+      url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=4&sort=date_read`,
     }).then(res => {
       const bookData = convertToJson.xml2json(res.data, {
         compact: true,
@@ -67,7 +69,7 @@ class CurrentlyReading extends Component {
         }
 
         return this.setState({
-          previouslyRead: [...this.state.previouslyRead, bookInfo],
+          previouslyRead: [bookInfo, ...this.state.previouslyRead],
         })
       })
     })
@@ -75,41 +77,12 @@ class CurrentlyReading extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Currently Reading</h2>
-        <div>
-          <div>
-            <a href={this.state.link} target="_blank" rel="noopener noreferrer">
-              <img
-                style={{ width: "125px", height: "auto" }}
-                src={this.state.image}
-                alt={`${this.state.title} by ${this.state.author}`}
-              />
-            </a>
-            <p>
-              {this.state.title} by {this.state.author}
-            </p>
-            <div>
-              {this.state.previouslyRead.map(book => (
-                <React.Fragment>
-                  <a href={book.link} target="_blank" rel="noopener noreferrer">
-                    <img
-                      style={{ width: "125px", height: "auto" }}
-                      src={book.image}
-                      alt={`${book.title} by ${book.author}`}
-                    />
-                  </a>
-                  <p>
-                    {book.title} by {book.author}
-                  </p>
-                </React.Fragment>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
+      <BookList
+        booklist={this.state}
+        previouslyRead={this.state.previouslyRead}
+      />
     )
   }
 }
 
-export default CurrentlyReading
+export default Books
