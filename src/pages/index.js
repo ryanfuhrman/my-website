@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Books from "../components/Books"
-import CurrentlyBuilding from "../components/CurrentlyBuilding"
+import Projects from "../components/Projects"
 
 const IndexPage = () => (
   <Layout>
@@ -18,7 +18,7 @@ const IndexPage = () => (
         `react`,
       ]}
     />
-    <CurrentlyBuilding />
+    <Projects />
     <Books />
   </Layout>
 )
