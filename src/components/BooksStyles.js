@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 const BooksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
 `
 
 /* Tooltip container */

@@ -20,7 +20,6 @@ class Books extends Component {
         spaces: 4,
       })
       const bookDataJson = JSON.parse(bookData)
-      console.log(bookDataJson)
       const book = bookDataJson.GoodreadsResponse.books.book
 
       book.map(book => {
@@ -48,7 +47,8 @@ class Books extends Component {
   render() {
     return (
       <div>
-        <h2>Books I've read recently</h2>
+        <h2>Books</h2>
+        <h3>What I've been reading</h3>
         <BooksContainer>
           {this.state.previouslyRead.map(book => (
             <React.Fragment key={book.isbn}>
