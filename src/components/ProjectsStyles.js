@@ -1,6 +1,8 @@
 import styled from "styled-components"
 
 const ProjectsContainer = styled.div`
+  padding: 0;
+  margin: 0;
   max-width: 1000px;
 
   display: grid;
@@ -12,7 +14,11 @@ const ProjectsContainer = styled.div`
 `
 
 const ProjectStyled = styled.div`
+  border: 1px solid black;
+  height: 150px;
   max-width: 400px;
+  padding: 10px 15px;
+  
   display: grid;
   grid-template-columns: 1fr 1fr 50px;
   grid-template-rows: auto;
@@ -37,6 +43,11 @@ const ProjectStyled = styled.div`
 
   .links {
     grid-area: links;
+
+    a img {
+      width: 40px;
+      height: auto;
+    }
   }
 `
 
