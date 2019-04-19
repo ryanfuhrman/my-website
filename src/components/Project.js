@@ -11,14 +11,14 @@ function Project(props) {
       <p className="name">{props.name}</p>
       <p className="desc">{props.desc}</p>
       <div className="links">
-        <a className="github" href={props.githubLink}>
-          <img src={GithubLogo} alt="Github" />
-        </a>
         {props.codepenLink && (
           <a className="codepen" href={props.codepenLink}>
             <img src={CodePen} alt="CodePen" />
           </a>
         )}
+        <a className="github" href={props.githubLink}>
+          <img src={GithubLogo} alt="Github" />
+        </a>
       </div>
     </ProjectStyled>
   )
