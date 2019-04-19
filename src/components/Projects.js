@@ -10,6 +10,7 @@ function Projects() {
       <h3>What I've been building</h3>
       <ProjectsContainer>
         <Project
+          className="twitch-app"
           owner="ryanfuhrman"
           name="twitch-app"
           desc="An app to play with the Twitch API"
@@ -17,6 +18,7 @@ function Projects() {
           codepenLink=""
         />
         <Project
+          className="markdown-viewer"
           owner="ryanfuhrman"
           name="markdown-viewer"
           desc="A markdown playground built with React"
@@ -24,6 +26,7 @@ function Projects() {
           codepenLink=""
         />
         <Project
+          className="flexboxDocs"
           owner="ryanfuhrman"
           name="flexboxTechnicalDocs"
           desc="Technical Documentation for Flexbox"
@@ -31,6 +34,7 @@ function Projects() {
           codepenLink="https://codepen.io/ryanfuhrman/full/YjpZyp"
         />
         <Project
+          className="calculator"
           owner="ryanfuhrman"
           name="calculator"
           desc="A javascript calculator"
