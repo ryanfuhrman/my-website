@@ -13,7 +13,7 @@ class Books extends Component {
     const goodReadsKey = "Zi8QCRbyqwOEYG0CayaIw"
 
     axios({
-      url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=4&sort=date_read`,
+      url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=5&sort=date_added`,
     }).then(res => {
       const bookData = convertToJson.xml2json(res.data, {
         compact: true,
@@ -38,7 +38,7 @@ class Books extends Component {
         }
 
         return this.setState({
-          previouslyRead: [bookInfo, ...this.state.previouslyRead],
+          previouslyRead: [...this.state.previouslyRead, bookInfo],
         })
       })
     })
@@ -58,9 +58,6 @@ class Books extends Component {
                 rel="noopener noreferrer"
                 className="tooltip"
               >
-                <span className="tooltiptext">
-                  {book.title} by {book.author}
-                </span>
                 <img src={book.image} alt={`${book.title} by ${book.author}`} />
               </BookStyled>
             </React.Fragment>
