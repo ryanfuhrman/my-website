@@ -1,32 +1,44 @@
 import styled from "styled-components"
 
 const ProjectsContainer = styled.div`
-  padding: 0;
-  margin: 0;
-  max-width: 1000px;
+  max-width: 800px;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  grid-gap: 15px;
   grid-template-areas:
-    "div div"
-    "div div";
+    "twitch-app markdown-viewer"
+    "flexbox-docs calculator";
+
+  .twitch-app {
+    grid-area: twitch-app;
+  }
+  .markdown-viewer {
+    grid-area: markdown-viewer;
+  }
+  .flexbox-docs {
+    grid-area: flexbox-docs;
+  }
+  .calculator {
+    grid-area: calculator;
+  }
 `
 
 const ProjectStyled = styled.div`
-  border: 1px solid black;
-  height: 150px;
-  max-width: 400px;
-  padding: 10px 15px;
-  
+  height: 125px;
+  max-width: 375px;
+  padding: 16px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 8px;
+  border-radius: 8px;
+
   display: grid;
-  grid-template-columns: 1fr 1fr 50px;
+  grid-template-columns: 1fr 1fr 100px;
   grid-template-rows: auto;
   grid-template-areas:
     "owner owner links"
-    "name name links"
-    "desc desc desc"
-  }
+    "name name name"
+    "desc desc desc";
 
   .owner {
     grid-area: owner;
@@ -43,10 +55,14 @@ const ProjectStyled = styled.div`
 
   .links {
     grid-area: links;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 
     a img {
       width: 40px;
       height: auto;
+      margin-left: 5px;
     }
   }
 `
