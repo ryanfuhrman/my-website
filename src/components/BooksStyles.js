@@ -1,18 +1,14 @@
 import styled from "styled-components"
 
 const BooksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(5, 128px);
+  grid-gap: 16px;
+  max-width: 100%;
 `
 
 /* Tooltip container */
 const BookStyled = styled.a`
-  /* position: relative;
-  display: inline-block;
-  padding: 5px;
-  margin: 0; */
   img {
     margin: 0;
     width: 128px;

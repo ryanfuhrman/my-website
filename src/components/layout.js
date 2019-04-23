@@ -15,17 +15,19 @@ import "./layout.css"
 
 const MainContainer = styled.div`
   margin: 0 auto;
-  max-width: 960;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  width: 768px;
+  padding: 0 15px;
 
   main {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     padding-top: 65px;
     padding-left: 32px;
     padding-right: 32px;
+    width: 100%;
+    max-width: 768px;
   }
 `
 
