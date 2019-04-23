@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from "axios"
 import convertToJson from "xml-js"
 
+import Section from "./Section"
 import { BooksContainer, BookStyled } from "./BooksStyles"
 
 class Books extends Component {
@@ -46,9 +47,7 @@ class Books extends Component {
 
   render() {
     return (
-      <div>
-        <h2>Books</h2>
-        <h3>What I've been reading</h3>
+      <Section header="Books" subheader="What I've been reading">
         <BooksContainer>
           {this.state.previouslyRead.map(book => (
             <React.Fragment key={book.isbn}>
@@ -63,7 +62,7 @@ class Books extends Component {
             </React.Fragment>
           ))}
         </BooksContainer>
-      </div>
+      </Section>
     )
   }
 }
