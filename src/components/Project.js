@@ -1,8 +1,8 @@
 import React from "react"
 
 import { ProjectStyled } from "./ProjectsStyles.js"
-import GithubLogo from "../images/github.png"
-import CodePen from "../images/codepen.png"
+import GithubLogo from "../images/github.svg"
+import CodePen from "../images/codepen.svg"
 
 function Project(props) {
   return (
