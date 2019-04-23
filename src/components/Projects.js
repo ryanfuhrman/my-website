@@ -26,12 +26,12 @@ function Projects() {
           codepenLink=""
         />
         <Project
-          className="flexboxDocs"
+          className="my-website"
           owner="ryanfuhrman"
-          name="flexboxTechnicalDocs"
-          desc="Technical Documentation for Flexbox"
-          githubLink="https://github.com/ryanfuhrman/flexboxTechnicalDocs"
-          codepenLink="https://codepen.io/ryanfuhrman/full/YjpZyp"
+          name="my-website"
+          desc="Hey, that's this website! 🚀"
+          githubLink="https://github.com/ryanfuhrman/my-website"
+          codepenLink=""
         />
         <Project
           className="calculator"
