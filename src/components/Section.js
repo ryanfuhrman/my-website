@@ -2,8 +2,9 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledDiv = styled.div`
-  width: 775px;
-  margin-bottom: 75px;
+  max-width: 704px;
+  margin-top: 40px;
+  margin-bottom: 35px;
 
   h2 {
     margin-bottom: 10px;
@@ -13,9 +14,6 @@ const StyledDiv = styled.div`
     margin-bottom: 25px;
     font-size: 20px;
     color: lightslategray;
-  }
-
-  div {
   }
 `
 
