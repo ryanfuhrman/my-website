@@ -3,7 +3,7 @@ import axios from "axios"
 import convertToJson from "xml-js"
 
 import Section from "./Section"
-import { BooksContainer, BookStyled } from "./BooksStyles"
+import { BooksContainer, BookStyled } from "./styles/BooksStyles"
 
 class Books extends Component {
   state = {

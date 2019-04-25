@@ -11,7 +11,7 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 import Header from "./header"
-import "./layout.css"
+import "./styles/layout.css"
 
 const MainContainer = styled.div`
   display: flex;

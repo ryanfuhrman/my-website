@@ -1,7 +1,7 @@
 import React from "react"
 
-import { ProjectStyled } from "./ProjectsStyles.js"
-import GithubLogo from "../images/github.svg"
+import { ProjectStyled } from "./styles/ProjectsStyles.js"
+import Github from "../images/github.svg"
 import CodePen from "../images/codepen.svg"
 
 function Project(props) {
@@ -17,7 +17,7 @@ function Project(props) {
           </a>
         )}
         <a className="github" href={props.githubLink}>
-          <img src={GithubLogo} alt="Github" />
+          <img src={Github} alt="Github" />
         </a>
       </div>
     </ProjectStyled>
