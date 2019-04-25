@@ -12,11 +12,21 @@ function Project(props) {
       <p className="desc">{props.desc}</p>
       <div className="links">
         {props.codepenLink && (
-          <a className="codepen" href={props.codepenLink}>
+          <a
+            className="codepen"
+            href={props.codepenLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={CodePen} alt="CodePen" />
           </a>
         )}
-        <a className="github" href={props.githubLink}>
+        <a
+          className="github"
+          href={props.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img src={Github} alt="Github" />
         </a>
       </div>

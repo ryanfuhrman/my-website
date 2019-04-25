@@ -25,17 +25,29 @@ const Header = ({ siteTitle }) => (
     </div>
     <div className="right">
       <div className="social-links">
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>
             <img src={LinkedIn} alt="linkedin" />
           </button>
         </a>
-        <a href="">
+        <a
+          href="https://codepen.io/ryanfuhrman/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>
             <img src={CodePen} alt="CodePen" />
           </button>
         </a>
-        <a href="">
+        <a
+          href="https://github.com/ryanfuhrman"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>
             <img src={Github} alt="GitHub" />
           </button>
