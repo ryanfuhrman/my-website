@@ -5,6 +5,7 @@ const StyledDiv = styled.div`
   max-width: 704px;
   margin-top: 40px;
   margin-bottom: 35px;
+  width: 100%;
 
   h2 {
     margin-bottom: 10px;
