@@ -36,19 +36,30 @@ const StyledHeader = styled.header`
     justify-content: flex-end;
     align-items: center;
 
-    .social-links {
+    .social-div {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
+      width: 210px;
+    }
 
-      a button {
-        border: none;
-      }
+    .social-links {
+    }
 
-      a button img {
-        background-color: white;
-        width: 30px;
-        height: 30px;
-      }
+    .social-btn {
+      border: none;
+      background-color: transparent;
+    }
+
+    .social-img {
+      height: 40px;
+      width: 40px;
+      fill: blue;
+    }
+
+    .codepen svg {
+      fill: blue;
+      color: blue;
     }
   }
 `

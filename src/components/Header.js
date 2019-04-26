@@ -5,7 +5,8 @@ import React from "react"
 import StyledHeader from "./styles/HeaderStyles"
 import Github from "../images/github.svg"
 import CodePen from "../images/codepen.svg"
-import LinkedIn from "../images/linkedin.png"
+import LinkedIn from "../images/linkedin.svg"
+import Email from "../images/email.svg"
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
@@ -24,38 +25,43 @@ const Header = ({ siteTitle }) => (
       </h1>
     </div>
     <div className="right">
-      <div className="social-links">
+      <div className="social-div">
         <a
           href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-links"
         >
-          <button>
-            <img src={LinkedIn} alt="linkedin" />
+          <button className="social-btn">
+            <img src={LinkedIn} alt="linkedin" className="social-img" />
           </button>
         </a>
         <a
           href="https://codepen.io/ryanfuhrman/"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-links"
         >
-          <button>
-            <img src={CodePen} alt="CodePen" />
+          <button className="social-btn">
+            <img src={CodePen} alt="CodePen" className="social-img codepen" />
           </button>
         </a>
         <a
           href="https://github.com/ryanfuhrman"
           target="_blank"
           rel="noopener noreferrer"
+          className="social-links"
         >
-          <button>
-            <img src={Github} alt="GitHub" />
+          <button className="social-btn">
+            <img src={Github} alt="GitHub" className="social-img" />
+          </button>
+        </a>
+        <a href="mailto:rsfuhrman10@gmail.com" className="social-links">
+          <button className="social-btn">
+            <img src={Email} alt="Email" className="social-img" />
           </button>
         </a>
       </div>
-      <a href="mailto:rsfuhrman10@gmail.com">
-        <button>Email</button>
-      </a>
     </div>
   </StyledHeader>
 )
