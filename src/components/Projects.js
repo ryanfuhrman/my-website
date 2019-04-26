@@ -2,7 +2,7 @@ import React from "react"
 
 import Section from "./Section"
 import Project from "./Project"
-import { ProjectsContainer } from "./styles/ProjectsStyles"
+import ProjectsContainer from "./styles/ProjectsStyles"
 
 function Projects() {
   return (

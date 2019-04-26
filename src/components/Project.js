@@ -1,6 +1,6 @@
 import React from "react"
 
-import { ProjectStyled } from "./styles/ProjectsStyles.js"
+import ProjectStyled from "./styles/ProjectStyles.js"
 import Github from "../images/github.svg"
 import CodePen from "../images/codepen.svg"
 
