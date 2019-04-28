@@ -55,24 +55,23 @@ const StyledHeader = styled.header`
     .social-img {
       height: 40px;
       width: 40px;
-
     }
 
     .linkedin {
       :hover {
-        filter: invert(.5) sepia(1) saturate(50) hue-rotate(180deg);
+        filter: invert(0.5) sepia(1) saturate(50) hue-rotate(180deg);
       }
     }
 
     .github {
       :hover {
-        filter: invert(.5) sepia(1) saturate(50) hue-rotate(250deg);
+        filter: invert(0.5) sepia(1) saturate(50) hue-rotate(250deg);
       }
     }
 
     .email {
       :hover {
-        filter: invert(.6) sepia(1) saturate(100) hue-rotate(15deg);
+        filter: invert(0.6) sepia(1) saturate(100) hue-rotate(15deg);
       }
     }
   }
