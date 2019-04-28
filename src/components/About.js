@@ -14,8 +14,12 @@ const AboutStyled = styled.div`
 const About = () => (
   <AboutStyled>
     <p>
-      Hi 👋, I'm a self-taught front-end developer looking an opportunity to
-      join a team and continue to grow my skills.
+      Hi{" "}
+      <span role="img" aria-label="Wave">
+        👋
+      </span>
+      , I'm a self-taught front-end developer looking an opportunity to join a
+      team and continue to grow my skills.
     </p>
     <p>
       I really enjoy building things with React, but I'm willing and hungry to
