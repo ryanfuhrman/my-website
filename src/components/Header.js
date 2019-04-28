@@ -33,17 +33,7 @@ const Header = ({ siteTitle }) => (
           className="social-links"
         >
           <button className="social-btn">
-            <img src={LinkedIn} alt="linkedin" className="social-img" />
-          </button>
-        </a>
-        <a
-          href="https://codepen.io/ryanfuhrman/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="social-links"
-        >
-          <button className="social-btn">
-            <img src={CodePen} alt="CodePen" className="social-img codepen" />
+            <img src={LinkedIn} alt="linkedin" className="social-img linkedin" />
           </button>
         </a>
         <a
@@ -53,12 +43,12 @@ const Header = ({ siteTitle }) => (
           className="social-links"
         >
           <button className="social-btn">
-            <img src={Github} alt="GitHub" className="social-img" />
+            <img src={Github} alt="GitHub" className="social-img github" />
           </button>
         </a>
         <a href="mailto:rsfuhrman10@gmail.com" className="social-links">
           <button className="social-btn">
-            <img src={Email} alt="Email" className="social-img" />
+            <img src={Email} alt="Email" className="social-img email" />
           </button>
         </a>
       </div>

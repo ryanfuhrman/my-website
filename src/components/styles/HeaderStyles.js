@@ -40,26 +40,40 @@ const StyledHeader = styled.header`
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
-      width: 210px;
-    }
-
-    .social-links {
+      width: 175px;
     }
 
     .social-btn {
       border: none;
+      height: 40px;
       background-color: transparent;
+      :hover {
+        cursor: pointer;
+      }
     }
 
     .social-img {
       height: 40px;
       width: 40px;
-      fill: blue;
+
     }
 
-    .codepen svg {
-      fill: blue;
-      color: blue;
+    .linkedin {
+      :hover {
+        filter: invert(.5) sepia(1) saturate(50) hue-rotate(180deg);
+      }
+    }
+
+    .github {
+      :hover {
+        filter: invert(.5) sepia(1) saturate(50) hue-rotate(250deg);
+      }
+    }
+
+    .email {
+      :hover {
+        filter: invert(.6) sepia(1) saturate(100) hue-rotate(15deg);
+      }
     }
   }
 `
