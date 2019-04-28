@@ -1,7 +1,8 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import SEO from "../components/Seo"
+import About from "../components/About"
 import Books from "../components/Books"
 import Projects from "../components/Projects"
 
@@ -18,6 +19,7 @@ const IndexPage = () => (
         `react`,
       ]}
     />
+    <About />
     <Projects />
     <Books />
   </Layout>
