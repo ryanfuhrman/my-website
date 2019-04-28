@@ -5,7 +5,7 @@ const StyledHeader = styled.header`
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "left right";
   position: fixed;
-  height: 100px;
+  height: 75px;
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +45,7 @@ const StyledHeader = styled.header`
 
     .social-btn {
       border: none;
-      height: 40px;
+      height: 30px;
       background-color: transparent;
       :hover {
         cursor: pointer;
@@ -53,8 +53,8 @@ const StyledHeader = styled.header`
     }
 
     .social-img {
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
     }
 
     .linkedin {
