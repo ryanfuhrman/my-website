@@ -55,6 +55,11 @@ const StyledHeader = styled.header`
     .social-img {
       height: 30px;
       width: 30px;
+
+      :hover {
+        transform: scale(1.08);
+        transition: transform 0.3s ease-in-out;
+      }
     }
 
     .linkedin {

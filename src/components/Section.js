@@ -9,12 +9,14 @@ const StyledDiv = styled.div`
 
   h2 {
     margin-bottom: 10px;
+    font-size: 24px;
   }
 
   h3 {
     margin-bottom: 25px;
-    font-size: 20px;
-    color: lightslategray;
+    font-size: 18px;
+    color: slategray;
+    font-weight: normal;
   }
 `
 

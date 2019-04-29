@@ -18,7 +18,7 @@ function Project(props) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={CodePen} alt="CodePen" />
+            <img className="icon codepen" src={CodePen} alt="CodePen" />
           </a>
         )}
         <a
@@ -27,7 +27,7 @@ function Project(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={Github} alt="Github" />
+          <img className="icon github" src={Github} alt="Github" />
         </a>
       </div>
     </ProjectStyled>
