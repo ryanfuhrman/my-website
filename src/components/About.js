@@ -26,6 +26,14 @@ const About = () => (
         I really enjoy building things with React, but I'm willing and hungry to
         learn new things.
       </p>
+      <p>
+        I'd love to hear from you! Please feel free to shoot me an{" "}
+        <a href="mailto:rsfuhrman10@gmail.com">email</a> or message me on{" "}
+        <a href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/">
+          linkedin
+        </a>
+        .
+      </p>
     </AboutStyled>
   </Section>
 )
