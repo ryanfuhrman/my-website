@@ -2,12 +2,12 @@ import React from "react"
 
 import Section from "./Section"
 import Project from "./Project"
-import ProjectsContainer from "./styles/ProjectsStyles"
+import ProjectsStyled from "./styles/ProjectsStyles"
 
 function Projects() {
   return (
-    <Section header="Projects" subheader="What I've been building">
-      <ProjectsContainer>
+    <ProjectsStyled header="Projects" subheader="What I've been building">
+      <div className="project-container">
         <Project
           className="twitch-app"
           owner="ryanfuhrman"
@@ -40,8 +40,8 @@ function Projects() {
           githubLink="https://github.com/ryanfuhrman/calculator"
           codepenLink="https://codepen.io/ryanfuhrman/full/jZzooK"
         />
-      </ProjectsContainer>
-    </Section>
+      </div>
+    </ProjectsStyled>
   )
 }
 

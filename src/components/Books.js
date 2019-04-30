@@ -3,7 +3,7 @@ import axios from "axios"
 import convertToJson from "xml-js"
 
 import Section from "./Section"
-import { BooksContainer, BookStyled } from "./styles/BooksStyles"
+import BooksStyled from "./styles/BooksStyles"
 
 class Books extends Component {
   state = {
@@ -47,22 +47,22 @@ class Books extends Component {
 
   render() {
     return (
-      <Section header="Books" subheader="What I've been reading">
-        <BooksContainer>
+      <BooksStyled header="Books" subheader="What I've been reading">
+        <div className="books-container">
           {this.state.previouslyRead.map(book => (
             <React.Fragment key={book.isbn}>
-              <BookStyled
+              <a
                 href={book.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="tooltip"
+                className="book"
               >
                 <img src={book.image} alt={`${book.title} by ${book.author}`} />
-              </BookStyled>
+              </a>
             </React.Fragment>
           ))}
-        </BooksContainer>
-      </Section>
+        </div>
+      </BooksStyled>
     )
   }
 }

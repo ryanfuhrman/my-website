@@ -1,18 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 
-const StyledDiv = styled.div`
+const StyledSection = styled.div`
   max-width: 704px;
   margin-top: 40px;
   margin-bottom: 35px;
   width: 100%;
 
-  h2 {
+  .header {
     margin-bottom: 10px;
     font-size: 24px;
   }
 
-  h3 {
+  .subheader {
     margin-bottom: 25px;
     font-size: 18px;
     color: slategray;
@@ -20,13 +20,13 @@ const StyledDiv = styled.div`
   }
 `
 
-function Section(props) {
+const Section = ({ className, header, subheader, children }) => {
   return (
-    <StyledDiv>
-      <h2>{props.header}</h2>
-      <h3>{props.subheader}</h3>
-      <div>{props.children}</div>
-    </StyledDiv>
+    <StyledSection className={className}>
+      <h2 className="header">{header}</h2>
+      <h3 className="subheader">{subheader}</h3>
+      <div className="children">{children}</div>
+    </StyledSection>
   )
 }
 
