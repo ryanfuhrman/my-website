@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import axios from "axios"
 import convertToJson from "xml-js"
 
-import Section from "./Section"
 import BooksStyled from "./styles/BooksStyles"
 
 class Books extends Component {

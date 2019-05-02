@@ -1,6 +1,5 @@
 import React from "react"
 
-import Section from "./Section"
 import Project from "./Project"
 import ProjectsStyled from "./styles/ProjectsStyles"
 
