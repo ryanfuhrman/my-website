@@ -9,7 +9,7 @@ function Projects() {
     <ProjectsStyled header="Projects" subheader="What I've been building">
       <div className="project-container">
         <Project
-          className="twitch-app"
+          className="twitch-app project"
           owner="ryanfuhrman"
           name="twitch-app"
           desc="An app to play with the Twitch API"
@@ -17,7 +17,7 @@ function Projects() {
           codepenLink=""
         />
         <Project
-          className="markdown-viewer"
+          className="markdown-viewer project"
           owner="ryanfuhrman"
           name="markdown-viewer"
           desc="A markdown playground built with React"
@@ -25,7 +25,7 @@ function Projects() {
           codepenLink=""
         />
         <Project
-          className="my-website"
+          className="my-website project"
           owner="ryanfuhrman"
           name="my-website"
           desc="Hey, that's this website! 🚀"
@@ -33,7 +33,7 @@ function Projects() {
           codepenLink=""
         />
         <Project
-          className="calculator"
+          className="calculator project"
           owner="ryanfuhrman"
           name="calculator"
           desc="A javascript calculator"

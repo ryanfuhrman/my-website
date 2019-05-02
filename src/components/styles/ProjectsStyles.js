@@ -27,10 +27,7 @@ const ProjectsStyled = styled(Section)`
       "twitch-app markdown-viewer"
       "my-website calculator";
     width: 100%;
-
-    div {
-      animation: fadeIn 1.5s 1.25s backwards;
-    }
+    animation: fadeIn 1.5s 1.25s backwards;
 
     .twitch-app {
       grid-area: twitch-app;
@@ -43,6 +40,13 @@ const ProjectsStyled = styled(Section)`
     }
     .calculator {
       grid-area: calculator;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .project-container {
+      display: flex;
+      flex-direction: column;
     }
   }
 `

@@ -62,6 +62,10 @@ const ProjectStyled = styled.div`
       }
     }
   }
+
+  @media (max-width: 600px) {
+    margin-bottom: 15px;
+  }
 `
 
 export default ProjectStyled

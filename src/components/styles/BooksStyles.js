@@ -46,6 +46,22 @@ const BooksStyled = styled(Section)`
       transform: scale(1.01);
     }
   }
+
+  @media (max-width: 600px) {
+    .books-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .book {
+      margin-bottom: 10px;
+      :last-child {
+        display: none;
+      }
+    }
+  }
 `
 
 export default BooksStyled
