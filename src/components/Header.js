@@ -11,14 +11,7 @@ const Header = ({ siteTitle }) => (
   <StyledHeader>
     <div className="left">
       <h1>
-        <Link
-          to="/"
-          style={{
-            color: `black`,
-            textDecoration: `none`,
-            fontSize: `22px`,
-          }}
-        >
+        <Link to="#" className="home">
           {siteTitle}
         </Link>
       </h1>
@@ -32,7 +25,11 @@ const Header = ({ siteTitle }) => (
           className="social-links"
         >
           <button className="social-btn">
-            <img src={LinkedIn} alt="linkedin" className="social-img linkedin" />
+            <img
+              src={LinkedIn}
+              alt="linkedin"
+              className="social-img linkedin"
+            />
           </button>
         </a>
         <a
