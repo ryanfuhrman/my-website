@@ -12,21 +12,23 @@ const StyledHeader = styled.header`
   z-index: 2;
   padding: 16px;
   background: rgb(246, 247, 248);
+  font-size: 22px;
 
   .left {
     grid-area: left;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-  }
-  .left h1 {
-    display: flex;
-    align-items: center;
-  }
-  .left h1 link {
-    color: black;
-    text-decoration: none;
-    font-size: 22px;
+
+    h1 {
+      display: flex;
+      align-items: center;
+    }
+
+    .home {
+      color: black;
+      text-decoration: none;
+    }
   }
 
   .right {
@@ -34,12 +36,12 @@ const StyledHeader = styled.header`
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
 
     .social-div {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      align-items: center;
       width: 175px;
     }
 
@@ -77,6 +79,28 @@ const StyledHeader = styled.header`
     .email {
       :hover {
         filter: invert(0.6) sepia(1) saturate(100) hue-rotate(15deg);
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 60px;
+    padding: 14px;
+
+    .left .home {
+      font-size: 20px;
+    }
+    .right {
+      .social-div {
+        width: 125px;
+      }
+      .social-btn,
+      .social-links {
+        height: 25px;
+      }
+      .social-img {
+        height: 25px;
+        width: 25px;
       }
     }
   }
