@@ -18,6 +18,11 @@ const StyledSection = styled.div`
     color: slategray;
     font-weight: normal;
   }
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+    margin-bottom: 24px;
+  }
 `
 
 const Section = ({ className, header, subheader, children }) => {

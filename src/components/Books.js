@@ -47,19 +47,24 @@ class Books extends Component {
   render() {
     return (
       <BooksStyled header="Books" subheader="What I've been reading">
-        <div className="books-container">
-          {this.state.previouslyRead.map(book => (
-            <React.Fragment key={book.isbn}>
-              <a
-                href={book.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="book"
-              >
-                <img src={book.image} alt={`${book.title} by ${book.author}`} />
-              </a>
-            </React.Fragment>
-          ))}
+        <div className="center-container">
+          <div className="books-container">
+            {this.state.previouslyRead.map(book => (
+              <React.Fragment key={book.isbn}>
+                <a
+                  href={book.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="book"
+                >
+                  <img
+                    src={book.image}
+                    alt={`${book.title} by ${book.author}`}
+                  />
+                </a>
+              </React.Fragment>
+            ))}
+          </div>
         </div>
       </BooksStyled>
     )

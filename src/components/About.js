@@ -23,6 +23,13 @@ const AboutStyled = styled(Section)`
     margin: 10px 0;
     animation: fadeIn 1.5s 0.25s backwards;
   }
+
+  @media (max-width: 600px) {
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+  }
 `
 
 const About = () => (

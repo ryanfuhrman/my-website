@@ -65,6 +65,19 @@ const ProjectStyled = styled.div`
 
   @media (max-width: 600px) {
     margin-bottom: 15px;
+    .owner {
+      font-size: 14px;
+    }
+    .name {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    grid-template-columns: 1fr 1fr 75px;
+    .name {
+      font-size: 16px;
+    }
   }
 `
 

@@ -19,6 +19,12 @@ const BooksStyled = styled(Section)`
     animation: fadeIn 1.5s 2s backwards;
   }
 
+  .center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .books-container {
     animation: fadeIn 1.5s 2.25s backwards;
     display: grid;
@@ -33,6 +39,7 @@ const BooksStyled = styled(Section)`
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
 
+    a,
     img {
       margin: 0;
       width: 100%;
@@ -49,17 +56,19 @@ const BooksStyled = styled(Section)`
 
   @media (max-width: 600px) {
     .books-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
+      grid-template-columns: 128px 128px;
     }
 
     .book {
-      margin-bottom: 10px;
       :last-child {
         display: none;
       }
+    }
+  }
+
+  @media (max-width: 320px) {
+    .books-container {
+      grid-gap: 8px;
     }
   }
 `
