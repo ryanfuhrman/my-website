@@ -5,14 +5,18 @@ const StyledHeader = styled.header`
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "left right";
   position: fixed;
-  height: 75px;
+  height: 65px;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
   padding: 16px;
-  background: rgb(246, 247, 248);
   font-size: 22px;
+
+  background: ${props => (props.showHeaderShadow ? "#FFF" : "#F6F7F8")};
+  box-shadow: ${props =>
+    props.showHeaderShadow ? "0 4px 8px rgba(0,0,0,0.04)" : "none"};
+  transition: all 0.2s ease-in-out;
 
   .left {
     grid-area: left;
@@ -28,6 +32,7 @@ const StyledHeader = styled.header`
     .home {
       color: black;
       text-decoration: none;
+      font-size: 24px;
     }
   }
 
@@ -46,6 +51,7 @@ const StyledHeader = styled.header`
     }
 
     .social-btn {
+      display: flex;
       border: none;
       height: 30px;
       background-color: transparent;
