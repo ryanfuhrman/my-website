@@ -10,7 +10,7 @@ class Books extends Component {
   }
 
   componentDidMount() {
-    const goodReadsKey = "Zi8QCRbyqwOEYG0CayaIw"
+    const goodReadsKey = process.env.GOOREADS_KEY
 
     axios({
       url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=5&sort=date_added`,
