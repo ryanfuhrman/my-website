@@ -11,7 +11,7 @@ class Books extends Component {
 
   componentDidMount() {
     const goodReadsKey = process.env.GOODREADS_KEY
-
+    console.log(goodReadsKey)
     axios({
       url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=5&sort=date_added`,
     }).then(res => {
