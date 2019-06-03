@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import Section from "../Section"
+import styled from 'styled-components';
+import Section from '../Section';
 
 const BooksStyled = styled(Section)`
   @keyframes fadeIn {
@@ -71,6 +71,6 @@ const BooksStyled = styled(Section)`
       grid-gap: 8px;
     }
   }
-`
+`;
 
-export default BooksStyled
+export default BooksStyled;

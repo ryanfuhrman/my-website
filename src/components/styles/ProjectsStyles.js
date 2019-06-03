@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import Section from "../Section"
+import styled from 'styled-components';
+import Section from '../Section';
 
 const ProjectsStyled = styled(Section)`
   @keyframes fadeIn {
@@ -24,8 +24,8 @@ const ProjectsStyled = styled(Section)`
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     grid-template-areas:
-      "twitch-app markdown-viewer"
-      "my-website calculator";
+      'twitch-app markdown-viewer'
+      'my-website calculator';
     width: 100%;
     animation: fadeIn 1.5s 1.25s backwards;
 
@@ -49,6 +49,6 @@ const ProjectsStyled = styled(Section)`
       flex-direction: column;
     }
   }
-`
+`;
 
-export default ProjectsStyled
+export default ProjectsStyled;

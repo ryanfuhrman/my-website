@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react';
+import styled from 'styled-components';
 
-import Section from "./Section"
+import Section from './Section';
 
 const AboutStyled = styled(Section)`
   @keyframes fadeIn {
@@ -30,12 +30,12 @@ const AboutStyled = styled(Section)`
       line-height: 1.75;
     }
   }
-`
+`;
 
 const About = () => (
   <AboutStyled header="About Me" className="about-styled">
     <p>
-      Hi{" "}
+      Hi{' '}
       <span role="img" aria-label="Wave">
         👋
       </span>
@@ -47,11 +47,11 @@ const About = () => (
       learn new things.
     </p>
     <p>
-      I'd love to hear from you! Please feel free to shoot me an{" "}
-      <a href="mailto:rsfuhrman10@gmail.com">email</a> or message me on{" "}
+      I'd love to hear from you! Please feel free to shoot me an{' '}
+      <a href="mailto:rsfuhrman10@gmail.com">email</a> or message me on{' '}
       <a href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/">linkedin</a>.
     </p>
   </AboutStyled>
-)
+);
 
-export default About
+export default About;

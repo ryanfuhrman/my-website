@@ -1,16 +1,16 @@
-import React, { Component } from "react"
-import axios from "axios"
-import convertToJson from "xml-js"
+import React, { Component } from 'react';
+import axios from 'axios';
+import convertToJson from 'xml-js';
 
-import BooksStyled from "./styles/BooksStyles"
+import BooksStyled from './styles/BooksStyles';
 
 class Books extends Component {
   state = {
     previouslyRead: [],
-  }
+  };
 
   componentDidMount() {
-    const goodReadsKey = process.env.GATSBY_GOODREADS_KEY
+    const goodReadsKey = process.env.GATSBY_GOODREADS_KEY;
 
     axios({
       url: `https://cors-anywhere.herokuapp.com/https://www.goodreads.com/review/list/17888634.xml?key=${goodReadsKey}&shelf=read&per_page=5&sort=date_added`,
@@ -18,16 +18,16 @@ class Books extends Component {
       const bookData = convertToJson.xml2json(res.data, {
         compact: true,
         spaces: 4,
-      })
-      const bookDataJson = JSON.parse(bookData)
-      const book = bookDataJson.GoodreadsResponse.books.book
+      });
+      const bookDataJson = JSON.parse(bookData);
+      const book = bookDataJson.GoodreadsResponse.books.book;
 
       book.map(book => {
-        const author = book.authors.author.name._text
-        const title = book.title._text
-        const image = book.image_url._text
-        const isbn = book.isbn._text
-        const link = book.link._text
+        const author = book.authors.author.name._text;
+        const title = book.title._text;
+        const image = book.image_url._text;
+        const isbn = book.isbn._text;
+        const link = book.link._text;
 
         const bookInfo = {
           author,
@@ -35,13 +35,13 @@ class Books extends Component {
           image,
           isbn,
           link,
-        }
+        };
 
         return this.setState({
           previouslyRead: [...this.state.previouslyRead, bookInfo],
-        })
-      })
-    })
+        });
+      });
+    });
   }
 
   render() {
@@ -67,8 +67,8 @@ class Books extends Component {
           </div>
         </div>
       </BooksStyled>
-    )
+    );
   }
 }
 
-export default Books
+export default Books;

@@ -1,10 +1,10 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import About from "../components/About"
-import Books from "../components/Books"
-import Projects from "../components/Projects"
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import About from '../components/About';
+import Books from '../components/Books';
+import Projects from '../components/Projects';
 
 const IndexPage = () => (
   <Layout>
@@ -23,6 +23,6 @@ const IndexPage = () => (
     <Projects />
     <Books />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

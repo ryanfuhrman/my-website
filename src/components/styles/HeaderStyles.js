@@ -1,9 +1,9 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "left right";
+  grid-template-areas: 'left right';
   position: fixed;
   height: 65px;
   top: 0;
@@ -13,9 +13,9 @@ const StyledHeader = styled.header`
   padding: 16px;
   font-size: 22px;
 
-  background: ${props => (props.showHeaderShadow ? "#FFF" : "#F6F7F8")};
+  background: ${props => (props.showHeaderShadow ? '#FFF' : '#F6F7F8')};
   box-shadow: ${props =>
-    props.showHeaderShadow ? "0 4px 8px rgba(0,0,0,0.04)" : "none"};
+    props.showHeaderShadow ? '0 4px 8px rgba(0,0,0,0.04)' : 'none'};
   transition: all 0.2s ease-in-out;
 
   .left {
@@ -110,6 +110,6 @@ const StyledHeader = styled.header`
       }
     }
   }
-`
+`;
 
-export default StyledHeader
+export default StyledHeader;

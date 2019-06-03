@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 const ProjectStyled = styled.div`
   width: 100%;
@@ -13,9 +13,9 @@ const ProjectStyled = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 100px;
   grid-template-areas:
-    "owner owner links"
-    "name name links"
-    "desc desc desc";
+    'owner owner links'
+    'name name links'
+    'desc desc desc';
 
   :hover {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 16px;
@@ -79,6 +79,6 @@ const ProjectStyled = styled.div`
       font-size: 16px;
     }
   }
-`
+`;
 
-export default ProjectStyled
+export default ProjectStyled;

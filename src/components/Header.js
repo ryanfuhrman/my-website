@@ -1,33 +1,33 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useState, useEffect } from "react"
-import { throttle } from "throttle-debounce"
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React, { useState, useEffect } from 'react';
+import { throttle } from 'throttle-debounce';
 
-import StyledHeader from "./styles/HeaderStyles"
-import Github from "../images/github.svg"
-import LinkedIn from "../images/linkedin.svg"
-import Email from "../images/email.svg"
+import StyledHeader from './styles/HeaderStyles';
+import Github from '../images/github.svg';
+import LinkedIn from '../images/linkedin.svg';
+import Email from '../images/email.svg';
 
 export default function Header({ siteTitle }) {
-  const [showHeaderShadow, setHeaderShadow] = useState(false)
+  const [showHeaderShadow, setHeaderShadow] = useState(false);
 
   function handleScroll() {
-    const headerShadowState = window && window.pageYOffset > 0
-    setHeaderShadow(headerShadowState)
+    const headerShadowState = window && window.pageYOffset > 0;
+    setHeaderShadow(headerShadowState);
   }
 
-  const throttleScroll = throttle(300, handleScroll)
+  const throttleScroll = throttle(300, handleScroll);
 
   useEffect(() => {
     if (window) {
-      window.addEventListener("scroll", throttleScroll)
+      window.addEventListener('scroll', throttleScroll);
     }
     return () => {
       if (window) {
-        window.removeEventListener("scroll", throttleScroll)
+        window.removeEventListener('scroll', throttleScroll);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <StyledHeader showHeaderShadow={showHeaderShadow}>
@@ -72,13 +72,13 @@ export default function Header({ siteTitle }) {
         </div>
       </div>
     </StyledHeader>
-  )
+  );
 }
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};

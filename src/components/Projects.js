@@ -1,18 +1,24 @@
-import React from "react"
+import React from 'react';
 
-import Project from "./Project"
-import ProjectsStyled from "./styles/ProjectsStyles"
+import Project from './Project';
+import ProjectsStyled from './styles/ProjectsStyles';
 
 function Projects() {
   return (
-    <ProjectsStyled header="Projects" subheader="What I've been building">
+    <ProjectsStyled
+      className="projects"
+      link="projects"
+      header="Projects"
+      subheader="What I've been building"
+    >
       <div className="project-container">
         <Project
           className="twitch-app project"
           owner="ryanfuhrman"
           name="twitch-app"
           desc="An app to play with the Twitch API"
-          githubLink="https://github.com/ryanfuhrman/twitch-app"
+          link="https://twitch-browser.ryanfuhrman.me"
+          githubLink="https://github.com/ryanfuhrman/twitch-browser"
           codepenLink=""
         />
         <Project
@@ -41,7 +47,7 @@ function Projects() {
         />
       </div>
     </ProjectsStyled>
-  )
+  );
 }
 
-export default Projects
+export default Projects;
