@@ -24,6 +24,10 @@ const AboutStyled = styled(Section)`
     animation: fadeIn 1.5s 0.25s backwards;
   }
 
+  .link {
+    color: blue;
+  }
+
   @media (max-width: 600px) {
     p {
       font-size: 16px;
@@ -48,8 +52,17 @@ const About = () => (
     </p>
     <p>
       I'd love to hear from you! Please feel free to shoot me an{' '}
-      <a href="mailto:rsfuhrman10@gmail.com">email</a> or message me on{' '}
-      <a href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/">linkedin</a>.
+      <a className="link" href="mailto:rsfuhrman10@gmail.com">
+        email
+      </a>{' '}
+      or message me on{' '}
+      <a
+        className="link"
+        href="https://www.linkedin.com/in/ryan-fuhrman-98897bb0/"
+      >
+        linkedin
+      </a>
+      .
     </p>
   </AboutStyled>
 );
