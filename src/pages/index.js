@@ -9,7 +9,6 @@ import Projects from '../components/Projects';
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
       keywords={[
         `ryan`,
         `fuhrman`,
