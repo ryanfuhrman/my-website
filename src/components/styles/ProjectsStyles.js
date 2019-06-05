@@ -43,6 +43,39 @@ const ProjectsStyled = styled(Section)`
     }
   }
 
+  .more-btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    background: #e2e3e4;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    :hover,
+    :focus {
+      background: #0069ed;
+    }
+
+    :focus {
+      outline: 1px solid #fff;
+      outline-offset: -4px;
+    }
+
+    :active {
+      transform: scale(0.99);
+    }
+  }
+
   @media (max-width: 600px) {
     .project-container {
       display: flex;
