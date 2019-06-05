@@ -12,11 +12,11 @@ const BooksStyled = styled(Section)`
   }
 
   h2 {
-    animation: fadeIn 1.5s 1.75s backwards;
+    animation: fadeIn 1.5s 1.5s backwards;
   }
 
   h3 {
-    animation: fadeIn 1.5s 2s backwards;
+    animation: fadeIn 1.75s 2s backwards;
   }
 
   .center-container {
@@ -26,7 +26,7 @@ const BooksStyled = styled(Section)`
   }
 
   .books-container {
-    animation: fadeIn 1.5s 2.25s backwards;
+    animation: fadeIn 1.5s 2s backwards;
     display: grid;
     grid-template-columns: repeat(5, 128px);
     grid-gap: 16px;

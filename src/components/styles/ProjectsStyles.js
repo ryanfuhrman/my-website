@@ -12,11 +12,11 @@ const ProjectsStyled = styled(Section)`
   }
 
   h2 {
-    animation: fadeIn 1.5s 0.75s backwards;
+    animation: fadeIn 1.5s 0.5s backwards;
   }
 
   h3 {
-    animation: fadeIn 1.5s 1s backwards;
+    animation: fadeIn 1.5s 0.75s backwards;
   }
 
   .project-container {
@@ -27,7 +27,7 @@ const ProjectsStyled = styled(Section)`
       'twitch-app markdown-viewer'
       'my-website calculator';
     width: 100%;
-    animation: fadeIn 1.5s 1.25s backwards;
+    animation: fadeIn 1.5s 1s backwards;
 
     .twitch-app {
       grid-area: twitch-app;
@@ -60,6 +60,7 @@ const ProjectsStyled = styled(Section)`
     transition: background 250ms ease-in-out, transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
+    animation: fadeIn 1.5s 1.25s backwards;
 
     :hover,
     :focus {
