@@ -53,6 +53,7 @@ const ProjectStyled = styled.div`
 
     a:hover {
       transform: scale(1.02);
+      backface-visibility: hidden;
       .icon {
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
