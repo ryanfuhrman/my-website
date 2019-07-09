@@ -46,17 +46,16 @@ function Projects() {
           codepenLink="https://codepen.io/ryanfuhrman/full/jZzooK"
         />
       </div>
-      <button className="more-btn">
-        <a
-          href="https://github.com/ryanfuhrman"
-          className="link"
-          target="_blank"
-          without
-          rel="noopener noreferrer"
-        >
-          Check Out the Rest
-        </a>
-      </button>
+
+      <a
+        href="https://github.com/ryanfuhrman"
+        className="link"
+        target="_blank"
+        without
+        rel="noopener noreferrer"
+      >
+        <button className="more-btn">Check Out the Rest</button>
+      </a>
     </ProjectsStyled>
   );
 }
