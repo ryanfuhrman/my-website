@@ -51,13 +51,14 @@ const ProjectsStyled = styled(Section)`
     border: none;
     border-radius: 8px;
     text-decoration: none;
-    background: #e2e3e4;
-    color: #ffffff;
+    background: #d7d9da;
+    color: rgba(0, 0, 0, 0.8);
     font-family: sans-serif;
     font-size: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: background 250ms ease-in-out, transform 150ms ease;
+    transition: background 250ms ease-in-out, color 250ms ease-in-out,
+      transform 150ms ease;
     -webkit-appearance: none;
     -moz-appearance: none;
     animation: fadeIn 1.5s 1.25s backwards;
@@ -65,6 +66,7 @@ const ProjectsStyled = styled(Section)`
     :hover,
     :focus {
       background: #0069ed;
+      color: #fff;
     }
 
     :focus {
