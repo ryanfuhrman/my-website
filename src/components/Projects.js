@@ -22,6 +22,15 @@ function Projects() {
           codepenLink=""
         />
         <Project
+          className="todo project"
+          owner="ryanfuhrman"
+          name="todo"
+          desc="A todo list built with React"
+          liveLink="https://todo.ryanfuhrman.me"
+          githubProjectLink="https://github.com/ryanfuhrman/react-todo"
+          codepenLink=""
+        />
+        <Project
           className="markdown-viewer project"
           owner="ryanfuhrman"
           name="markdown-viewer"
@@ -36,14 +45,6 @@ function Projects() {
           desc="Hey, that's this website! 🚀"
           githubProjectLink="https://github.com/ryanfuhrman/my-website"
           codepenLink=""
-        />
-        <Project
-          className="calculator project"
-          owner="ryanfuhrman"
-          name="calculator"
-          desc="A javascript calculator"
-          githubProjectLink="https://github.com/ryanfuhrman/calculator"
-          codepenLink="https://codepen.io/ryanfuhrman/full/jZzooK"
         />
       </div>
 
