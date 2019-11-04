@@ -24,8 +24,8 @@ const ProjectsStyled = styled(Section)`
     grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     grid-template-areas:
-      'twitch-app markdown-viewer'
-      'my-website calculator';
+      'react-colors twitch-app'
+      'markdown-viewer calculator';
     width: 100%;
     animation: fadeIn 1.5s 1s backwards;
 
@@ -35,7 +35,7 @@ const ProjectsStyled = styled(Section)`
     .markdown-viewer {
       grid-area: markdown-viewer;
     }
-    .my-website {
+    .react-colors {
       grid-area: my-website;
     }
     .calculator {

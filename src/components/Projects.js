@@ -13,6 +13,15 @@ function Projects() {
     >
       <div className="project-container">
         <Project
+          className="react-colors project"
+          owner="ryanfuhrman"
+          name="react-colors"
+          desc="A color picker app built with React"
+          liveLink="https://react-colors.ryanfuhrman.me"
+          githubProjectLink="https://github.com/ryanfuhrman/my-website"
+          codepenLink=""
+        />
+        <Project
           className="twitch-browser project"
           owner="ryanfuhrman"
           name="twitch-browser"
@@ -36,14 +45,6 @@ function Projects() {
           name="markdown-viewer"
           desc="A markdown playground built with React"
           githubProjectLink="https://github.com/ryanfuhrman/markdown-viewer"
-          codepenLink=""
-        />
-        <Project
-          className="my-website project"
-          owner="ryanfuhrman"
-          name="my-website"
-          desc="Hey, that's this website! 🚀"
-          githubProjectLink="https://github.com/ryanfuhrman/my-website"
           codepenLink=""
         />
       </div>
