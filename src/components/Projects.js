@@ -18,7 +18,7 @@ function Projects() {
           name="react-colors"
           desc="A color picker app built with React"
           liveLink="https://react-colors.ryanfuhrman.me"
-          githubProjectLink="https://github.com/ryanfuhrman/my-website"
+          githubProjectLink="https://github.com/ryanfuhrman/react-colors"
           codepenLink=""
         />
         <Project
